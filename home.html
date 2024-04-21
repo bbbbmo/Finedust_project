@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fine Dust Smart Home</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="info">
+      <div info_date>
+        <div class="time">00 : 00</div>
+        <div class="day">00/00/0000</div>
+      </div>
+      <div class="wrapper">
+        <div class="info_weather">
+          <div class="temp">온도</div>
+          <div class="container">
+            <div class="region">지역</div>
+            <div class="weather">날씨</div>
+            <div class="cloud">구름</div>
+            <div class="wind">풍속</div>
+          </div>
+        </div>
+        <button id="btn">ON</button>
+      </div>
+    </div>
+    <div class="info_air">
+      <div class="air">
+        <div class="header">Air pollution</div>
+        <ul>
+          <li class="co">0.00</li>
+          <li class="nh3">0.00</li>
+          <li class="no">0.00</li>
+          <li class="o3">0.00</li>
+          <li class="pm2_5">0.00</li>
+          <li class="pm10">0.00</li>
+          <li class="so2">0.00</li>
+        </ul>
+      </div>
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script src="./js/time.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/chart.js"></script>
+  </body>
+</html>
