@@ -6,7 +6,7 @@ const port = 8080;
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/home.html");
 });
 
 app.listen(port, () => {

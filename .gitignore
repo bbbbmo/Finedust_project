@@ -49,3 +49,9 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
 
 js/weather.js
+
+package.json
+
+package-lock.json
+
+node_modules
